@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import { http } from "src/shared/axios-instance";
-import Modal from "src/shared/Modal";
-import Navbar from "src/shared/Navbar";
+import { http } from "shared/axios-instance";
 import Game from "./Game";
+import Modal from "shared/Modal";
+import Navbar from "shared/Navbar";
 
 type TPost = {
   title: string;

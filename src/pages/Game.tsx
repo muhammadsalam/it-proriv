@@ -1,5 +1,5 @@
-import { TouchEvent, useCallback, useRef, useState } from "react";
-import { useAllStore } from "src/entities/stores";
+import { TouchEvent, useRef, useState } from "react";
+import { useAllStore } from "entities/stores";
 
 interface ClickPosition {
   x: number;
@@ -9,7 +9,7 @@ interface ClickPosition {
 }
 
 const Game = () => {
-  const { token, balance, energy, maxEnergy, tap } = useAllStore();
+  const { balance, energy, maxEnergy, tap } = useAllStore();
   const timeoutIdRef = useRef<number | null>(null);
   const nextIdRef = useRef(0);
   const [clickPositions, setClickPositions] = useState<ClickPosition[]>([]);

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useAllStore } from "src/entities/stores";
+import { useAllStore } from "entities/stores";
 
 const Home = () => {
   const { token } = useAllStore();

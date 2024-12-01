@@ -1,12 +1,10 @@
-import { FunctionComponent, useEffect, useRef, useState } from "react";
+import { FunctionComponent, useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
-import Home from "src/pages/Home";
-import Modal from "src/shared/Modal";
-import Auth from "src/pages/Auth";
-import Register from "src/pages/Register";
-import Main from "src/pages/Main";
-import Navbar from "src/shared/Navbar";
+import Home from "pages/Home";
+import Auth from "pages/Auth";
+import Register from "pages/Register";
+import Main from "pages/Main";
 export const App: FunctionComponent = () => {
   const [isLoading, setIsLoading] = useState(true);
 
